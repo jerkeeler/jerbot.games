@@ -11,6 +11,11 @@
     <link rel="icon" href="%sveltekit.assets%/favicon.png" />
     <link rel="sitemap" type="application/xml" href="%sveltekit.assets%/sitemap.xml" />
 
+    %sveltekit.head%
+  </head>
+  <body data-sveltekit-preload-data="hover">
+    <div style="display: contents">%sveltekit.body%</div>
+
     <!-- 100% privacy-first analytics -->
     <script
       async
@@ -18,6 +23,7 @@
       data-collect-dnt="true"
       src="https://simple.jerbot.games/latest.js"
     ></script>
+    <script async defer src="https://simple.aoestats.io/auto-events.js"></script>
     <noscript>
       <img
         src="https://simple.jerbot.games/noscript.gif"
@@ -25,10 +31,5 @@
         referrerpolicy="no-referrer-when-downgrade"
       />
     </noscript>
-
-    %sveltekit.head%
-  </head>
-  <body data-sveltekit-preload-data="hover">
-    <div style="display: contents">%sveltekit.body%</div>
   </body>
 </html>

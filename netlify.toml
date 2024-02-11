@@ -1,0 +1,15 @@
+[build]
+  base = ""
+  publish = "build/"
+  command = "npm run build"
+
+[[redirects]]
+  from = "https://jerbotgames.netlify.app/*"
+  to = "https://jerbot.games/:splat"
+  status = 301
+  force = true
+
+[context.production.environment]
+  NODE_VERSION = "21.4.0"
+  NPM_VERSION = "10.2.4"
+  NODE_ENV = "production"
